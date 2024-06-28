@@ -81,26 +81,26 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto bg-purple-100 min-h-[80vh] my-5 w-[90%] p-5">
+      <div className="container mx-auto bg-purple-100 min-h-[80vh] my-5 w-[80%] p-5">
         <div className="addTodo">
-          <h2 className="font-bold text-xl font-sans">Add Todo</h2>
+          <h2 className="font-bold text-3xl font-sans p-2">Add Todo</h2>
           <input
             value={todo}
             onChange={handleChange}
-            className="input p-2 rounded-md w-[100%] my-2 mx-auto"
+            className="input p-5 m-2 rounded-md w-[80%] my-2 mx-auto"
             type="text"
           /><br/>
           <button
             onClick={handleAdd}
             disabled={todo.length < 3}
-            className="disabled:bg-slate-500 bg-blue-600 text-white p-2 mx-auto w-[100%] rounded-md"
+            className="disabled:bg-slate-500 bg-blue-600 text-white p-3 mx-auto w-[80%] rounded-md text-lg"
           >
             Add
           </button>
         </div>
         <input
-          type="checkbox"
-          className="mx-2 my-3"
+          type="checkbox" 
+          className="mx-2 my-3 text-"
           checked={finished}
           onChange={handleFinished}
         />
